@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation Using Single Function</h1>
+
+    <label for="userName">User Name</label>
+    <input type="text" name="userName" id="userName" onblur="validate(this, 'error1', 'User Name')">
+    <span id="error1"></span>
+    <br><br>
+    <label for="userEmail">User Email</label>
+    <input type="email" name="userEmail" id="userEmail" onblur="validate(this, 'error2', 'User Email')">
+    <span id="error2"></span>
+    <br><br>
+    <label for="userPassword">User Password</label>
+    <input type="password" name="userPassword" id="userPassword" onblur="validate(this, 'error3', 'User Password')">
+    <span id="error3"></span>
+    <br><br>
+    <label for="userMobile">User Mobile</label>
+    <input type="tel" name="userMobile" id="userMobile" onblur="validate(this, 'error4', 'User Mobile')">
+    <span id="error4"></span>
+
+    <button onclick="submitForm()">Submit</button>
+    <h2>Submitted Data:</h2>
+    <div id="submittedData"></div>
+
+
+    <script>
+
+        // Form validation 
+        function validate(e, spnId, msg) {
+            if (e.value == "") {
+                document.getElementById(spnId).innerText = msg + " is Empty!"
+                document.getElementById(spnId).style.color = "red"
+            } else {
+                document.getElementById(spnId).innerText = ""
+            }
+        }
+
+         // Submit form data
+        function submitForm() {
+            const userName = document.getElementById("userName").value;
+            const userEmail = document.getElementById("userEmail").value;
+            const userPassword = document.getElementById("userPassword").value;
+            const userMobile = document.getElementById("userMobile").value;
+
+          // Display submitted data
+            const submittedDataDiv = document.getElementById("submittedData");
+            submittedDataDiv.innerHTML = `
+                <p><strong>User Name:</strong> ${userName}</p>
+                <p><strong>User Email:</strong> ${userEmail}</p>
+                <p><strong>User Password:</strong> ${userPassword}</p>
+                <p><strong>User Mobile:</strong> ${userMobile}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- onBlur => The onblur attribute fires the moment that the element loses focus. 
+ Onblur is most often used with form validation code (e.g. when the user leaves a form field).
+  Tip: The onblur attribute is the opposite of the onfocus attribute. -->
