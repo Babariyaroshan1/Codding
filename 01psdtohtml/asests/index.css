@@ -1,0 +1,146 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+header{
+/* background-color: black; */
+padding: 10px 0;
+
+}
+
+.container{
+    width: 1200px;
+    /* border: solid 2px red; */
+    margin: 0 auto;
+}
+.col-30{
+    width: 30%;
+    padding: 90px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+.emp{
+    /* display: flex; */
+}
+.sec-two-cart p h3{
+    text-align: center;
+}
+.emp h3 p {
+ font-size: 33px;
+text-transform: uppercase;
+color: #f64b3c;
+font-weight: 700;
+font-family: "Archivo";
+text-align: center;
+
+}
+
+.emp img{
+    width: 200px;
+    border-radius: 50%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-one{
+background-image: url(./Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)\ \(1\).png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+
+}
+.links ul li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+.links a{
+    font-size: 25PX;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+}
+.one-sec-text h1{
+    font-size: 80PX;
+    color: white;
+    width: 50%;
+    margin: 40px 0;
+    line-height: 80px;
+}
+.sec-main-one P{
+    font-size: 20PX;
+    color: white;
+    width: 50%;
+    margin:0 0 80px 0;
+}
+.sec-main-one button{
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #f64b3c;
+    font-size: 25px;
+text-transform: uppercase;
+color: #ffffff;
+}
+.sec-two{
+
+}
+.sec-two{
+    height:800PX;
+    background-color:#f6eedf;
+} 
+
+.sec-two-text{
+    padding: 80px 0;
+}
+
+.sec-two-text h2{
+    color:#f64b3c; 
+    font-size: 70px; 
+    text-align: center;
+    margin: 0 0 20px 0;
+} 
+.sec-two-text p{
+color:#f64b3c;
+font-size: 20px; 
+text-align:center;
+width: 70%;
+margin: 0 auto;
+}
+.sec-three{
+    display: flex;
+}
+
+.sec-three{
+border:  solid 2px; 
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+background-color: #f64b3c;
+}
+
+.col-45{
+   
+}
+
+.col-45{
+   
+    width:45%;
+    border: #f64b3c solid 1px;
+}

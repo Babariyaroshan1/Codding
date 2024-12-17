@@ -1,0 +1,921 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(asests/font/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(asests/font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(asests/font/Nunito-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.sec-one {
+  width: 1200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.links li {
+  font-size: 20px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 400;
+font-family: "Oswald";
+  display: inline-block;
+  margin: 0 0 0 25px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-icon  {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero-section {
+  /* align-items: flex-end; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-image: url("./asests/images/headerbg.png");
+  background-size: cover;
+  background-position: center;
+  height: 690px;
+  color: #fff;
+}
+
+.hero-section .overlay {
+  margin-top: 225px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hero-section h1 {
+  font-size: 90px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+  /* font-size: 48px;
+    margin-bottom: 10px; */
+}
+
+.hero-section p {
+  width: 550px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Montserrat";
+
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  width: 280px;
+  padding: 15px 0px;
+  background-color: #e8631c;
+  color: #fff;
+  border: none;
+
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Oswald";
+  text-align: center;
+}
+/* Responsive Styles for Screens 576px or Smaller */
+@media (max-width: 576px) {
+  .navbar {
+    /* flex-direction: column;  */
+    align-items: flex-start;
+    text-align: center;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .navbar .logo img {
+    width: 100px;
+  }
+
+  .navbar nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .links li {
+    font-size: 14px; 
+    margin: 0;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 20px; 
+    text-align: center; 
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .register-btn {
+    width: 50%; 
+    padding: 12px 0px;
+  }
+}
+
+/*<---------- sec2 ------>*/
+
+.sec-2 {
+  height: 840px;
+  background-color: #ff6a00;
+  color: white;
+  text-align: center;
+}
+.sec-2 h2 {
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.title-2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 45px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  /* margin-top: 30px; */
+  font-family: "Oswald";
+}
+
+.container {
+  /* border: solid 2px; */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.col-33 {
+  /* margin-right: 50px; */
+  max-width: 26%;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.col-33 img {
+  width: 100%;
+}
+
+.col-33 h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.col-33 p {
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+/* Responsive Styles for 576px or Smaller */
+@media (max-width: 576px) {
+  .title-2 {
+    font-size: 28px;
+    padding-top: 0;
+  }
+.sec-2 {
+  height: auto;
+  padding: 50px 0px;
+}
+  .sec-2 .description {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column; 
+    justify-content: center; 
+  }
+
+  .col-33 {
+    max-width: 100%;
+    width: 90%; 
+    margin: 10px auto; 
+  }
+
+  .col-33 h2 {
+    font-size: 20px;
+  }
+
+  .col-33 p {
+    font-size: 14px;
+  }
+}
+/* sec-3 */
+.sec-3 {
+  height: 780px;
+  padding: 40px;
+  background-color: #333;
+  text-align: center;
+}
+.sec-3 h2 {
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.sec-3 p {
+  /* margin-bottom: 40px;
+  font-size: 21px;
+  color: #e8e8e8; */
+}
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+}
+.badge {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* .pricing-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #2c2c2c;
+} */
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-family: "Oswald";
+}
+
+.description {
+  margin-bottom: 68px;
+  font-size: 25px;
+  color: #e8e8e8;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content:center;
+  gap: 90px;
+}
+.pricing-cards p{
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #e8e8e8;
+  font-family: "Montserrat";
+}
+
+.card {
+  background-color: #ff6600;
+  color: #ffffff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  display:block;
+  width: 265px;
+  height: 43px;
+  border-radius: 4px;
+  color: white;
+  background-color: #303030;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Media Query for Devices with Screen Width <= 576px */
+@media (max-width: 576px) {
+  .title {
+    font-size: 35px; 
+  }
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .sec-3 {
+  height: auto ;
+    /* height: 1437px; */
+  }
+  .pricing-cards {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px; 
+    margin: 0 auto;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 14px; 
+  }
+
+  .card-price {
+    width: 100%; 
+    max-width: 250px;
+    height: 40px;
+  }
+}
+ /* sec-4 */
+
+ /* General Styles */
+
+.sec-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col-50 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* text-align: center; */
+  /* padding: 20px; */
+  background-color: #ff6700;
+  color: #fff;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h4 {
+  margin-left: 100px;
+  font-size: 60px;
+text-transform: uppercase;
+color: #ffffff;
+font-weight: 700;
+margin-bottom: 35px;  
+font-family: "Oswald";
+}
+
+.text-content p {
+  margin-left: 100px;
+  width: 570px;
+  font-size: 27px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin-bottom: 60px;
+}
+
+.btn-show4 {
+  margin-left: 100px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+  text-align: center;
+  background-color: #303030;
+  border: none;
+  padding: 10px 60px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.btn-show4:hover {
+  background-color: #333;
+}
+
+/* Responsive Design for Screens 576px or Smaller */
+@media (max-width: 576px) {
+  .section {
+    flex-direction: column; 
+  }
+
+  .col-50 {
+    width: 100%; 
+  }
+
+  .text-content {
+    padding: 20px;
+    text-align: center; 
+  }
+
+  h4 {
+    font-size: 36px; 
+    margin: 20px 0;
+    margin-left: 0;
+  }
+
+  .text-content p {
+    width: 100%;
+    font-size: 18px; 
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .btn-show4 {
+    font-size: 16px;
+    padding: 10px 40px;
+    margin-left: 0; 
+  }
+
+  .image {
+    height: auto;
+  }
+}
+/* sec-five */
+
+
+.statistics-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1f1f1f;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.section-title {
+  margin-top: 50px;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #b3b3b3;
+}
+statistics-section p{
+  margin-bottom: 68px;
+  font-size: 25px;
+  color: #e8e8e8;
+}
+.statistics {
+  display: flex;
+  justify-content: center;
+  margin-top:150px ;
+  color: white ;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1 1 150px;
+  margin: 10px;
+}
+
+.stat-number {
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .statistics {
+      flex-direction: row;
+      gap: 30px;
+  }
+
+  .section-title {
+      font-size: 20px;
+  }
+
+  .stat-number {
+      font-size: 28px;
+  }
+
+  .stat-label {
+      font-size: 14px;
+  }
+}
+
+/* For mobile devices with a max width of 576px */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    margin-top: 30px;
+  }
+  .container {
+    max-width: 1400px;
+    /* height: 627px; */
+    height: auto;
+  }
+  .statistics-section p {
+    font-size: 18px; /* Adjust paragraph font size */
+    margin-bottom: 40px;
+  }
+
+  .statistics {
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .stat {
+    margin: 0; /* Remove extra margins for smaller screens */
+  }
+
+  .stat-number {
+    font-size: 30px; /* Adjust number font size */
+  }
+
+  .stat-label {
+    font-size: 14px; /* Adjust label font size */
+  }
+}
+ 
+/* sec-five */
+
+/* General Styling for the Section */
+.sec-five {
+  position: relative;
+  width: 100%;
+  height: 129vh;
+  background-image: url(asests/images/sec5bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-5 {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.sec-five p {
+  width: 600px;
+  font-size: 30px;
+  line-height: 1.8;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+
+.sec-five h4 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 576px) {
+  .sec-five {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .section-5 {
+    padding: 15px;
+  }
+
+  .sec-five p {
+    width: 100%; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    margin-bottom: 15px;
+  }
+
+  .sec-five h4 {
+    font-size: 30px; 
+    margin-top: 5px;
+  }
+}
+
+/* footerseclast */
+.foot-title {
+  background-color: #e8631c;; 
+  padding: 50px 0;
+  position: relative;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Title and Description Styling */
+.footertitle {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.footertitle .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footertitle .descri {
+  margin-top: 60px;
+  font-size: 20px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Montserrat";
+text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.secfoot-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.email {
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 360px;
+  font-size: 1rem;
+}
+
+.email:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-show1 {
+  position: absolute;
+  right: 119px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-show1:hover {
+  background-color: #0056b3; 
+}
+/* General Responsive Styling */
+@media (max-width: 576px) {
+  .foot-title {
+      padding: 30px 15px;
+  }
+
+  .footertitle .title {
+      font-size: 1.5rem;
+  }
+
+  .footertitle .descri {
+      font-size: 15px; 
+      width: 70%;
+      line-height: 1.4;
+  }
+
+  .secfoot-btn {
+      flex-direction: column; 
+      gap: 15px;
+  }
+
+  .email {
+      width: 60%; 
+      font-size:15px; 
+  }
+
+  .btn-show1 {
+      width: 40%; 
+      text-align: center; 
+      padding: 12px; 
+  }
+}
+
+/* fotteer-sec */
+.footteer {
+  font-family: "Montserrat"; 
+  background-color: #303030;
+}
+
+.ctnbutoon {
+  margin: 100px 0;
+  z-index: 1;
+
+}
+
+.socialmedia {
+}
+
+.social_icon {
+  width: 42px;
+}
+
+.ft-head1  {
+font-size: 22px;
+color: white;
+font-family: "Oswald";
+text-transform: uppercase;
+}
+.lorem1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size:15px;
+  color: white;
+  font-family: "Montserrat";
+}
+.ctnbutoon a{
+text-decoration: none ;
+}
+.ft-head {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: white;
+  font-weight: 300; 
+}
+
+.ft-ctnbtn:hover {
+  color: rgb(255, 0, 0);
+}
+
+.ft-ctnbtn {
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+  font-weight: 300;
+}
+
+
+/* Responsive styling for screens 576px or smaller */
+@media (max-width: 576px) {
+  .footteer .row {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .ctnbutoon {
+    margin: 30px 0; 
+    text-align: center;
+  }
+
+  .ft-head1 {
+    font-size: 18px; 
+  }
+
+  .lorem1 {
+    font-size: 13px; 
+  }
+
+  .socialmedia {
+    gap: 10px; 
+  }
+
+  .ft-head {
+    font-size: 16px; 
+  }
+
+  .ft-ctnbtn {
+    font-size: 14px; 
+  }
+}

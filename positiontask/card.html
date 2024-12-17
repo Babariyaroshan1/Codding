@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0;padding: 0;box-sizing: border-box;border: 1px solid; }
+        .row{display: flex; }
+        .col{ padding: 15px;width: 25%; }
+        img{width: 100%;}
+        .container{ width: 1200px; margin: auto; }
+        .posi-ab{position: absolute; width: 100px; right: 0;}
+        .posi-rele{position: relative;}
+        .content{ display: none; position: absolute; z-index: 1; }
+        .card:hover .content{ display:block; }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="content">Data</div>
+                    <div class="card-header posi-rele"> 
+                        <img src="images/50off.png" class="posi-ab" alt="">
+                        <img src="images/1.jpeg" alt=""> </div>
+                        <div class="card-body"> title </div>
+                    </div>
+                    
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="content">Data</div>
+                    <div class="card-header posi-rele"> <img src="images/50off.png" class="posi-ab" alt=""><img src="images/2.jpeg" alt=""> </div>
+                    <div class="card-body"> title </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="content">Data</div>
+                    <div class="card-header posi-rele"><img src="images/50off.png" class="posi-ab" alt=""> <img src="images/3.jpeg" alt=""> </div>
+                    <div class="card-body"> title </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="content">Data</div>
+                    <div class="card-header posi-rele"><img src="images/50off.png" class="posi-ab" alt=""> <img src="images/4.jpeg" alt=""> </div>
+                    <div class="card-body"> title </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

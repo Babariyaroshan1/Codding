@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+        .row{
+            display: flex;
+            /* justify-content: space-between; */
+        }
+        .ml-a{
+            margin-left: auto;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 20px 20px 0px 0px;
+            line-height: 20px;
+
+        }
+        ul li a{
+            text-decoration: none;
+            margin-left: 20px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .search input{
+            width: 200px;
+            height: 30px;
+            margin: 20px 20px 0px 0px;
+            background-color: rgba(255,255,255,.2);
+            border-radius:20px;
+            opacity: .5;
+            padding-left: 20px;
+            color: #fff;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            background-color: #a5aa05;
+            color: #333;
+        }
+        .col{
+            width: 25%;
+            background-color: rgba(25,255,255,.25);
+            color: #000;
+            padding: 50px 50px 0px 50px;
+            margin-top: 200px;
+            margin-left: 10%;
+            text-align: center;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .col:hover{
+            background-color: #1d530a;
+            color: #dacece;
+            margin-top: 100px;
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: cursive;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="my-menu">
+                  <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallary</a></li>
+                        <li><a href="#">Conatact US</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="search ml-a">
+                 <input type="text" name="" id="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae eos possimus sed eius quam ad quisquam perspiciatis in praesentium deleniti beatae soluta similique sapiente, dolore inventore, amet rem aliquam?</p>
+        </div>
+        <div class="col">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, eveniet? Iste reiciendis nihil ratione dolorem, illo fugiat perferendis aperiam facilis, dolore aut quia ipsam dignissimos debitis mollitia esse pariatur adipisci?</p>
+        </div >
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi ut assumenda accusamus maxime. Cumque ipsam id facere hic, odit corporis eaque officia ex eum blanditiis? Velit, vero. Hic, repellendus.</p>
+        </div>
+    </div>
+</body>
+</html>

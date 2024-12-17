@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+            width: 1300px;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 20px;
+        }
+
+        .container2 {
+            width: 1300px;
+            background-color: white;
+            margin: 0 auto;
+            border: 1px solid;
+            /* margin-top: 90px; */
+            padding: 6em 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 24px;
+            /* font-weight: bold; */
+        }
+
+        .blue {
+            color: #0b3d91;
+        }
+
+        .black {
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+        }
+
+        nav ul li a.active {
+            color: #ff4b4b;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            color: #333;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        /* .menu-item-has-children::after {
+            position: absolute;
+        border:1px dashed;
+            right: 7px;
+            top: 7px;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            font-size: 15px;
+            } */
+
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+
+        }
+
+
+        li:hover .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown li {
+            width: 200px;
+        }
+
+        .dropdown li a {
+            color: #333;
+        }
+
+        .dropdown li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-icons .icon {
+            width: 24px;
+
+        }
+
+        .purchase-btn {
+            background-color: #0d47a1;
+            color: #fff;
+            padding: 18px 36px;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-weight: 400;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 16px;
+
+        }
+
+        .purchase-btn:hover {
+            background-color: #0c3063;
+        }
+
+        /* hero section */
+        .card {
+            display: flex;
+            /* max-width: 1100px; */
+            background-color: white;
+            overflow: hidden;
+            justify-content: ;
+            /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
+            transition: transform 0.3s ease;
+        }
+
+        .card-content {
+            padding: 50px;
+            max-width: 500px;
+            color: #333;
+        }
+.ROW{
+
+}
+        .title {
+            color: #6c757d;
+            font-size: 17px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        h1 .highlight {
+            color: #0d6efd;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 18px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #084298;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #0d6efd;
+            border: 2px solid #0d6efd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .carousel-container {
+            flex: 1;
+        }
+
+        .carousel-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .carousel-container img {
+                height: 300px;
+            }
+        }
+
+        .carousel-container {
+            width: 80%;
+            min-height: 10vh;
+            max-width: 500px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            transition: opacity 0.5s ease;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Buttons */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        .carousel-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .title-2 {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .heading {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0c1a32;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h3><a href=""><span class="blue">Digit</span><span class="black">Marketing</span></a></h3>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">pages</a>
+                            <ul id=".menu-item-has-children" class="dropdown">
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Landing page</a></li>
+                                <li><a href="#">Elements page</a></li>
+                                <li><a href="#">404 page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="purchase-btn">Purchase</a>
+                    <a href="#"><i class="fa-solid fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container2">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="title">We Are Gathered</h2>
+                <h1>For Your <span></span></h1>
+                <h1><span></span>Digital Marketing</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, excepturi. Distinctio accusantium
+                    fugit odit fugit ipsam.</p>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">Read More</a>
+                    <a href="#" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <!-- <div class="carousel-container">
+                <img src="./aasests/banner1.jpg" alt="Team Working">
+            </div> -->
+            <div class="carousel-container">
+                <img src="./aasests/banner1.jpg" alt="Slide 1">
+            </div>
+            <!-- <div class="carousel-container">
+                <img src="./aasests/banner2.jpg" alt="Slide 2">
+              </div>
+              <div class="carousel-container">
+                <img src="./aasests/banner4.jpg" alt="Slide 3">
+              </div>
+            </div> -->
+            <button class="carousel-button prev" id="prevBtn">&#10094;</button>
+            <button class="carousel-button next" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+    </div>
+    <div class="container2">
+        <div class="">
+            <div class="card-content"></div>
+            <div class="subheading">Design & Marketing</div>
+            <!-- <h1 class="heading">Let's Grow Your Business Together.</h1> -->
+                <div></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, suscipit delectus tempore,
+                    maiores dolor voluptates placeat dicta eveniet cupiditate facere incidunt, soluta nisi tempora optio
+                    vitae. Molestias ad quam adipisci?</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.getElementById('nextBtn');
+        const prevButton = document.getElementById('prevBtn');
+
+        let currentIndex = 0;
+
+        function updateButtons() {
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex === slides.length - 1;
+        }
+
+        function moveToSlide(index) {
+            track.style.transform = `translateX(-${index * 100}%)`;
+            currentIndex = index;
+            updateButtons();
+        }
+
+        nextButton.addEventListener('click', () => {
+            moveToSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            moveToSlide(currentIndex - 1);
+        });
+
+        updateButtons(); // Initial button state
+    </script> -->
+</body>
+
+</html>

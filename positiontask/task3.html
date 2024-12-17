@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px auto;
+        }
+
+        .box {
+            width: 800px;
+        }
+
+        .heading {
+            margin: 10px;
+            color: darkgreen;
+        }
+        .paragraph {
+            margin: 10px;
+            color: rgb(82, 85, 110);
+        }
+
+        .code {
+            color: rgb(223, 17, 17);
+            font-weight: bold;
+        }
+
+        .span {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+
+        .card1 {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #131217db;
+        }
+
+        .card2 {
+            background-color: rgb(20, 188, 146);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #131217db;
+        }
+
+        .card3 {
+            background-color: rgb(203, 13, 114);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #131217db;
+        }
+
+        .cardhead {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <h2 class="heading">Default setup</h2>
+
+            <p class="paragraph"> default setup of flex properties is <code class="code">flex: 0     1 auto</code>. That's
+                shorthand for<code class="code"> flex grow </code>,<code class="code"> flex-shrink</code>, and <code
+                    class="code">flex-basis</code></br> properties value.</p>
+            <p class="paragraph"> This setup basically tells us "All the flez children <span class="span"> should not
+                    grow,
+                    should shrink
+                </span> at the same rate have their <span class="span">initial </br> size based on thier width or
+                    height"</span>
+            </p>    
+        </div>
+        <div class="cards">
+            <div class="card1">
+                <h4 class="cardhead">First card</h4>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                    beguiled and
+                    demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                    the
+                    pain and trouble that are bound to ensue, and equal blame belongs to those who fail in their duty
+                    through weakness of will, which is the same as saying through shrinking from toil and pain</p>
+            </div>
+            <div class="card2">
+                <h4 class="cardhead">Second card</h4>
+                <p> I'm the shortest</p>
+            </div>
+            <div class="card3">
+                <h4 class="cardhead"> Third card</h4>
+                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                    frequently occur that pleasures have to be repudiated and annoyances accepted.</p>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>

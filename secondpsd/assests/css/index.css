@@ -1,0 +1,745 @@
+@font-face {
+    font-family: reey;
+    src: url(../text/Reey-Regular.otf);
+}
+@font-face {
+    font-family:OpenSans;
+    src: url(../text/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../text/Montserrat-Regular.ttf);
+}
+:root {
+    --padding-x: 15px;
+    --title-font: reey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header CSS START */
+
+.header {
+    background: url(../images/Header\ Background\ \(1\).png) no-repeat 50% /cover;
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body {
+    font-family: "OpenSans";
+}
+
+.nav-menu .nav-item {
+    display: inline;
+}
+
+.nav-menu .nav-item a {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menutop {
+    margin-left: auto;
+}
+
+.main-menu {
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+.search {
+    color: black;
+    padding-top: 12px;
+}
+
+.search input {
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+}
+
+/* .font-reey{ font-family: reey; } */
+.main-title {
+    font-family: var(--title-font);
+    color: white;
+    font-size: 4rem;
+    padding: 1em 0;
+}
+
+header h5 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "OpenSans";
+}
+
+.custom-magni {
+    top: 45px;
+    right: 40px;
+}
+
+.pb-5 {
+    padding-bottom: 10em;
+}
+
+.chatni-img {
+    bottom: 8px;
+    left: -113px;
+}
+
+.leaf-img {
+    bottom: -130px;
+    right: -136px
+}
+
+/* Header CSS END */
+
+
+
+
+/* Common CSS START */
+.container {
+    max-width: 1250px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+/* Common CSS END */
+
+
+
+
+.row-sec1 {
+    display: flex;
+}
+.col {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.btn {
+    font-weight: 800;
+    padding: 10px 30px;
+    border-radius: 21px;
+    display: inline-block;
+    /* margin-top: 20px; */
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: black;
+}
+
+.mt-1 {
+    margin-top: 2em;
+}
+
+.mt-2 {
+    width: 450px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "OpenSans";
+    margin-top: 1em;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.posi-rel {
+    position: relative;
+}
+
+/* Common CSS END */
+
+/* ---------------------------------------------- */
+/* secction-2 css start */
+.sec-two {
+    height: 1000px;
+    background-color: white;
+
+}
+
+.sec-two-text {
+    padding: 80px 0;
+}
+
+.sec-two-text h2 {
+    font-family: reey;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.sec-two-text p {
+    width: 1050px;
+    padding: 15px 0px 0px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #2f3135;
+    font-family: "OpenSans";
+    text-align: center;
+}
+
+.sec-two-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row-cart2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.emp {
+    padding-left: 25px;
+    filter: drop-shadow(0px 25px 12px rgba(12, 13, 12, 0.35));
+}
+
+.emp .ei2 {
+    padding-top: 22px;
+}
+
+.row-cart2 p {
+    font-size: 17px;
+    color: #474747;
+    padding-left: 62px;
+}
+
+.row-cart2 h3 {
+    font-size: 20px;
+    color: #343434;
+    padding-left: 62px;
+}
+
+.box .btn-show:hover {
+    background-color: #343434;
+    ;
+    color: red;
+}
+
+.box {
+    display: flex;
+    padding-top: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 25px 12px rgba(12, 13, 12, 0.35));
+}
+
+.box .btn-show {
+    margin: 0 auto;
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #2f3135;
+}
+
+/* secction-2 css END */
+
+/* ---------------------------------------------- */
+
+/* secction-3 css Start */
+.container-3 {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.sec-three {
+    height: 560px;
+    background-color: #27292c;
+}
+
+.sec-three-text {
+    padding: 80px 0;
+}
+
+.sec-three-text h2 {
+    font-family: reey;
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.sec-three-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row-cart3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row-cart3 .per {
+    font-size: 18px;
+    color: white;
+    padding-left: 62px;
+    line-height: 26px;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.box-3 .btn-show3:hover {
+    background-color: #343434;
+    ;
+    color: red;
+}
+
+.box-3 {
+    display: flex;
+    padding-top: 50px;
+    border-radius: 20px;
+}
+
+.box-3 .btn-show3 {
+    margin: 0 auto;
+    padding: 20px 60px;
+    border-radius: 22px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #2f3135;
+}
+
+/* secction-3 css END */
+
+/* ---------------------------------------------- */
+
+/* secction-4 css Start */
+.container-4 {
+
+    max-width: 1400px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sec-four-text {
+    display: flex;
+}
+
+.sec-four-text {
+    align-items: center;
+    height: 1000px;
+    background-color: white;
+}
+
+
+.sec-four-text h4 {
+    font-size: 50px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "OpenSans";
+}
+
+.four p {
+    width: 450px;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 22px;
+    color: #27292c;
+    font-weight: 300;
+    font-family: "OpenSans";
+}
+
+.box-4 .btn-show4:hover {
+    background-color: #343434;
+    ;
+    color: red;
+}
+
+.box-4 {
+    display: flex;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.btn-show4 {
+
+    padding: 20px 60px;
+    border-radius: 50px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #2f3135;
+}
+
+.secdis2 {
+    display: flex;
+    align-items: center;
+}
+
+.sec-four-text {
+    align-items: center;
+    height: 1000px;
+    background-color: white;
+}
+
+.four h1 {
+    font-size: 50px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "OpenSans";
+}
+
+.four p {
+    width: 450px;
+    /* padding-bottom: 25px; */
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 22px;
+    color: #27292c;
+    font-weight: 300;
+    font-family: "OpenSans";
+}
+
+/* secction-4 css END */
+
+/* ---------------------------------------------- */
+
+/* section5 start */
+
+
+.container-fluid{
+ 
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.sec5 {
+    height: 1000px;
+    background: url(../images/Header\ Background\ \(1\).png)no-repeat 50% /cover;
+position: relative;
+}
+
+.sec5-head {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    font-size: 58px;
+    color: #f8f6f1;
+    font-family: "Reey";
+}
+
+.sec5-head-descr {
+    width: 714px;
+    margin: 1rem 13rem;
+    height: 74px;
+    font-size: 18px;
+    line-height: 33px;
+    color: #f8f6f1;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.rectangle {
+    width: 162px;
+    height: 8px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+.sec5-partial {
+
+    right: 260px;
+}
+
+.sec5-sliceOFpizza {
+    bottom: -187px;
+    left: 12rem;
+}
+
+.sec5-bothleaves {
+    position: absolute;
+    top: -200px; 
+}
+
+/* section5 end */
+
+/* section6 start */
+.container-6{
+    width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; */
+}
+.sec6 {
+    margin-top: 100px;
+    height: 600px;
+}
+.sec6pmain{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 140px 0 0 0;
+}
+.sec6-head {
+    text-align: center;
+    font-size: 42px;
+    line-height: 33px;
+    color: #393939;
+    font-family: "Reey";
+}
+
+.sec6-head-descr {
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 25px;
+    color: #333d42;
+    font-weight: 300;
+    font-family: "OpenSans";
+}
+
+.loremper {
+    /* margin-top: 100px; */
+    /* margin-bottom: 38px; */
+    margin: 7rem 0px 50px 0;
+    width: 817px;
+    /* height: 161px; */
+    font-size: 25px;
+    color: #3f3f3f;
+    font-weight:200;
+    font-family: "OpenSans";
+    text-align: center;
+}
+
+.sec6-last-row-name {
+    font-size: 21px;
+    line-height: 33px;
+    color: #3f3f3f;
+    font-weight: 700;
+    font-family: "OpenSans";
+    text-align: center;
+}
+
+/* section5 end */
+
+/* main section end */
+
+/* footer section start */
+
+/* section1 start */
+.foot-title {
+    position: relative;
+    display: flex;
+    height: 730px;
+    background: url(../images/footbg.png) no-repeat 50%/cover;
+}
+
+/* .foot-col {
+
+    width: 945px;
+    } */
+    
+    .title {
+    margin-top: 105px;
+    margin-bottom: 50px;
+    font-size: 68px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "OpenSans";
+    text-align: center;
+}
+
+.descri {
+    width: 800px;
+    /* height: 210px;  */
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "OpenSans";
+    text-align: center;
+}
+
+.email {
+    margin-top: 79px;
+    margin-left: 50px;
+    width: 524px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    opacity: 0.678;
+    font-size: 25px;
+    color: #54524f;
+    font-weight: 300;
+    font-family: "OpenSans";
+    padding-left: 30px;
+}
+/* .Sub-btn:hover{
+    background-color: red;
+}
+.Sub-btn {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "OpenSans";
+    text-align: center;
+    line-height: 48px;
+    width: 201px;
+    border-radius: 32px;
+    background-color: #54524f;
+} */
+a:hover{
+    color: red;
+    background-color: #343434;
+}
+
+ .btn-show1{
+     display: inline-block;
+     width: 201px;
+     font-size: 25px;
+     line-height: 48px;
+     border-radius: 32px;
+     font-weight: 600;
+     text-align: center;
+     font-family: "OpenSans";
+     text-transform: uppercase;
+     color: #ffffff;
+     background-color: #54524f;
+     filter: drop-shadow(0px 25px 12px rgba(12, 13, 12, 0.35));
+}
+
+.footerleaf {
+    top: -115px;
+    width: 100%;
+}
+
+/* section1 end */
+
+/* section2 start */
+.footteer {
+    font-family: "Montserrat";
+}
+
+.ctnbutoon {
+    margin: 100px 0;
+    z-index: 1;
+
+}
+
+.socialmedia {
+}
+
+.social_icon {
+    width: 42px;
+}
+
+.ft-head1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #343434;
+    font-weight: 300;
+}
+
+ .ft-head1  {
+font-size: 22px;
+color: #343434;
+    /* font-weight: 300; */
+}
+@font-face {
+font-family: Montserratt;
+src: url(../text/Montserrat-Regular.ttf);
+}
+.lorem1 {
+    margin-bottom: 20px;
+    width: 300px;
+    font-size:15px;
+    color: #5d5d5d;
+    /* font-weight: 400; */
+    font-family:"Montserratt" ;
+}
+
+.ft-head {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #343434;
+    font-weight: 300; 
+}
+
+.ft-ctnbtn:hover {
+    color: rgb(255, 0, 0);
+}
+
+.ft-ctnbtn {
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    color: #343434;
+    font-weight: 300;
+}
+
+/* section2 end */
+/* footer section end */

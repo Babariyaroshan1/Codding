@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 1px solid;
+        }
+
+        .row {
+            display: flex;
+            height: 200px;
+            background-color: grey;
+        }
+
+        .row>* {
+            padding: 15px;
+            background-color: green;
+            color: white;
+        }
+
+        .two {
+            align-self: baseline;
+        }
+
+        .three {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+
+</html>
