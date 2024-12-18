@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 44vh;
+      margin-bottom: 55px;
+    }
+
+    .login-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logoname {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logoname img {
+      width: 16%;
+      margin-top: 44px;
+      /* padding-bottom: 50px; */
+    }
+
+    h1 {
+      /* margin: -44px 0 -4px 0; */
+      margin-top: 50px;
+      padding-bottom: 50px;
+      color: #1877f2;
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .boxh2 h2 {
+      font-size: 19px;
+      padding-bottom: 20px;
+    }
+
+    .login-box input {
+      margin-bottom: 10px;
+    }
+
+    .login-box button {
+      background-color: #1877f2;
+      color: white;
+      font-size: 1rem;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-control {
+      padding: 15px 14px;
+    }
+
+    .login-box a {
+      color: #1877f2;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 39vh;
+      font-size: 12px;
+      color: #8e8e8e;
+      background-color: #ffffff;
+      padding: 20px 10px;
+      border-top: 1px solid #dbdbdb;
+    }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .language-list {
+      margin-bottom: 10px;
+    }
+
+    .language-list a {
+      text-decoration: none;
+      color: #8e8e8e;
+      margin: 0 5px;
+      display: inline-block;
+    }
+
+    .language-list a:hover {
+      text-decoration: underline;
+    }
+
+    .language-list .add-language {
+      display: inline-block;
+      border: 1px solid #dbdbdb;
+      border-radius: 2px;
+      padding: 2px 4px;
+      cursor: pointer;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #8e8e8e;
+      margin: 0 8px;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: #8e8e8e;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logoname">
+    <img src="assests/images/facebook logo.svg" alt="">
+    <!-- <h1>facebook</h1> -->
+  </div>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="boxh2">
+        <h2>Log in to Facebook</h2>
+      </div>
+      <form>
+        <div class="email mb-3">
+          <input type="email" class="form-control" placeholder="Email address or phone number" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <button type="submit">Log in</button>
+      </form>
+      <div class="mt-3">
+        <a href="#">Forgotten account?</a> &middot; <a href="#">Sign up for Facebook</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- foooter -->
+  <footer>
+    <div class="footer-container">
+      <div class="language-list">
+        <a href="#">English (UK)</a>
+        <a href="#">ગુજરાતી</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">मराठी</a>
+        <a href="#">اردو</a>
+        <a href="#">தமிழ்</a>
+        <a href="#">తెలుగు</a>
+        <a href="#">বাংলা</a>
+        <a href="#">മലയാളം</a>
+        <a href="#">Español</a>
+        <span class="add-language">+</span>
+      </div>
+      <hr>
+      <div class="footer-links">
+        <a href="#">Sign Up</a>
+        <a href="#">Log in</a>
+        <a href="#">Messenger</a>
+        <a href="#">Facebook Lite</a>
+        <a href="#">Video</a>
+        <a href="#">Places</a>
+        <a href="#">Games</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Meta Pay</a>
+        <a href="#">Meta Store</a>
+        <a href="#">Meta Quest</a>
+        <a href="#">Ray-Ban Meta</a>
+        <a href="#">Meta AI</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy Centre</a>
+        <a href="#">Groups</a>
+        <a href="#">About</a>
+        <a href="#">Create ad</a>
+        <a href="#">Create Page</a>
+        <a href="#">Developers</a>
+      </div>
+      <div class="copyright">Meta © 2025</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript for Form Validation -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (email.trim() === '' || password.trim() === '') {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      alert('Login successful!');
+      // Add your authentication logic here
+    });
+  </script>
+</body>
+
+</html>
