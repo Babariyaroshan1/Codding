@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Login</title>
+    <style>
+      input {
+        height: 30px;
+        width: 30%;
+      }
+      .inp {
+        position: relative;
+      }
+      #spnId {
+        font-size: 14px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Insta Login</h1>
+    <div class="inp">
+      <span id="spnId">Enter User Name</span>
+      <input
+        type="password"
+        name="inpData"
+        id="inpData"
+        oninput="handlePosition()"
+      />
+      <button onclick="showPassword()">Show</button>
+    </div>
+
+    <hr />
+    <!-- <img src="" id="img" alt="Image"> -->
+
+    <script>
+      let inpData = document.getElementById("inpData");
+      //   let image = document.getElementById("img")
+      let spnId = document.getElementById("spnId");
+
+      function handlePosition() {
+        // Position
+        if (inpData.value == "") {
+          spnId.style.top = "10px";
+        } else {
+          spnId.style.top = "0px";
+        }
+      }
+
+      function showPassword() {
+        // Password
+
+        if (inpData.type === "password") {
+          inpData.type = "text";
+        } else {
+          inpData.type = "password";
+        }
+      }
+
+      //   CSS
+
+      //   inpData.style.color = "red"
+
+      //   image.src = "dog.jpg"
+      //   image.style.width = "100%"
+    </script>
+  </body>
+</html>
