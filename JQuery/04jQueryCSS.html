@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery CSS</title>
+  </head>
+  <body>
+    <!-- jQuery CDN Link  -->
+
+    <h1>jQuery CSS</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias
+      doloremque nostrum placeat animi dolore voluptates quae, in a tempore quam
+      labore optio necessitatibus dignissimos pariatur. Sint quasi distinctio
+      ipsum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias
+      doloremque nostrum placeat animi dolore voluptates quae, in a tempore quam
+      labore optio necessitatibus dignissimos pariatur. Sint quasi distinctio
+      ipsum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias
+      doloremque nostrum placeat animi dolore voluptates quae, in a tempore quam
+      labore optio necessitatibus dignissimos pariatur. Sint quasi distinctio
+      ipsum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias
+      doloremque nostrum placeat animi dolore voluptates quae, in a tempore quam
+      labore optio necessitatibus dignissimos pariatur. Sint quasi distinctio
+      ipsum.
+    </p>
+
+    <hr />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery CSS Script  -->
+
+    <script>
+      $("body").css("backgroundColor", "yellow");
+      $("h1").css({
+        backgroundColor: "black",
+        color: "white",
+        fontSize: "40px",
+        padding: "10px 0px",
+      });
+      $("p").css({"background-color": "crimson", "color" : "white", "padding" : "10px 0px", "font-size" : "20px"});
+    </script>
+
+    <script>
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+        console.log("Ready");
+      });
+    </script>
+  </body>
+</html>

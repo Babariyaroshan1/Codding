@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Introduction</title>
+
+
+    <!-- CSS  -->
+
+    <style>
+        body{
+            background-color: violet;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blueviolet;
+            background-color: crimson;
+            color: aliceblue;
+            text-align: center;
+        }
+        button{
+            margin: 10px 0px;
+            padding: 10px 30px;
+            background-color: blue;
+            color: aliceblue;
+            border: 1px solid blue;
+            border-radius: 20px;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- jQuery CDN Link  -->
+
+    <h1>jQuery</h1>
+    <p>Code Less, Do More!</p>
+    <hr>
+    <h2>Hide and Show</h2>
+    <div class="box">
+        <h2>Box</h2>
+    </div>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnToggle">Toggle</button>
+
+    <hr>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // console.log(jQuery);
+      // console.log($);
+
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+
+        // Hide 
+
+        $("#btnHide").click(function () {
+            $(".box").hide()
+        });
+
+        // Show 
+
+        $("#btnShow").click(function () {
+            $(".box").show()
+        });
+
+
+        // Toggle 
+
+        $("#btnToggle").click(function () {
+            $(".box").toggle()
+        });
+
+
+
+
+
+
+      });
+      
+
+
+
+    //   Selectors
+
+
+    
+
+
+
+
+
+    </script>
+  </body>
+</html>

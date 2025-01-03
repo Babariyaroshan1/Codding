@@ -350,7 +350,7 @@ p {
 
 .slider-btn {
   position: absolute;
-  top:128%; 
+  top:82%; 
   transform: translateY(-50%);
   background: rgb(0 0 0 / 70%);
   color: white;
@@ -477,13 +477,16 @@ height: 80px;
   background-color: rgb(78, 78, 78);
 }
 
-.icon {
-  font-size: 1.5rem;
+.toggle-btn{
+  font-size: 25px;
   font-weight: bold;
+  color: #fff;
+  /* font-size: 1.5rem;
+  font-weight: bold; */
 }
 
 .answer {
-  transition: ease-out 0.5s;
+  transition: ease-out 0.4s;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
   /* transition: 0.3s ease-out,0.3s ease-out; */

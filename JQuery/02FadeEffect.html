@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Fade Effect</title>
+
+
+    <!-- CSS  -->
+
+    <style>
+        body{
+            background-color: violet;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blueviolet;
+            background-color: crimson;
+            color: aliceblue;
+            text-align: center;
+        }
+        button{
+            margin: 10px 0px;
+            padding: 10px 30px;
+            background-color: blue;
+            color: aliceblue;
+            border: 1px solid blue;
+            border-radius: 20px;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- jQuery CDN Link  -->
+
+    <h1>jQuery</h1>
+    <p>Code Less, Do More!</p>
+    <hr>
+    <h2>Fade Effect</h2>
+    <div class="box">
+        <h2>Box</h2>
+    </div>
+
+    <button id="btnFadeIn">Fade In</button>
+    <button id="btnFadeOut">Fade Out</button>
+    <button id="btnFadeToggle">Fade Toggle</button>
+    <button id="btnFadeTo">Fade To</button>
+    <button id="btnReset">Reset</button>
+
+    <hr>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // console.log(jQuery);
+      // console.log($);
+
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+
+        // Fade In 
+
+        $("#btnFadeIn").click(function () {
+            $(".box").fadeIn(2000)
+        });
+
+        // Fade Out 
+
+        $("#btnFadeOut").click(function () {
+            $(".box").fadeOut(2000)
+        });
+
+
+        // Fade Toggle 
+
+        $("#btnFadeToggle").click(function () {
+            $(".box").fadeToggle(3000)
+        });
+
+        // Fade To 
+
+        $("#btnFadeTo").click(function () {
+            $(".box").fadeTo(3000, 0.5)
+        });
+
+
+        // Reset 
+
+        $("#btnReset").click(function () {
+            $(".box").fadeTo(1000, 1)
+        });
+
+
+
+
+
+
+      });
+      
+
+
+
+    //   Selectors
+
+
+    
+
+
+
+
+
+    </script>
+  </body>
+</html>

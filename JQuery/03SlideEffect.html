@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Slide Effect</title>
+
+
+    <!-- CSS  -->
+
+    <style>
+        body{
+            background-color: violet;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blueviolet;
+            background-color: crimson;
+            color: aliceblue;
+            text-align: center;
+        }
+        button{
+            margin: 10px 0px;
+            padding: 10px 30px;
+            background-color: blue;
+            color: aliceblue;
+            border: 1px solid blue;
+            border-radius: 20px;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- jQuery CDN Link  -->
+
+    <h1>jQuery</h1>
+    <p>Code Less, Do More!</p>
+    <hr>
+    <h2>Slide Effect</h2>
+    <div class="box">
+        <h2>Box</h2>
+    </div>
+
+    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideDown">Slide Down</button>
+    <button id="btnSlideToggle">Slide Toggle</button>
+
+    <hr>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // console.log(jQuery);
+      // console.log($);
+
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+
+        // Slide Up
+
+        $("#btnSlideUp").click(function () {
+            $(".box").slideUp()
+        });
+
+        // Slide Down
+
+        $("#btnSlideDown").click(function () {
+            $(".box").slideDown()
+        });
+
+
+        // Slide Toggle 
+
+        $("#btnSlideToggle").click(function () {
+            $(".box").slideToggle(3000)
+        });
+
+
+      });
+      
+
+
+
+
+
+
+    
+
+
+
+
+
+    </script>
+  </body>
+</html>
