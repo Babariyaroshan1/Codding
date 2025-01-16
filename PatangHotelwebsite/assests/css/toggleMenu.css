@@ -1,0 +1,88 @@
+
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav ul {
+        display: block;
+        
+    }
+  
+	.nav li ul{
+		margin-top: 10px
+	}
+	.nav {
+    list-style: none;
+    display:inline-block !important;
+		   
+}
+.nav > li {
+   /* float: left;*/
+}
+.nav li {
+    position: relative;
+}
+.nav > li > a {
+    display: block;
+	        padding: 0.7em 0.37em 0.7em 0.37em;
+}
+
+
+.nav li li a {
+    display: block;
+    /* background: #1d1d1d; */
+    position: relative;
+    z-index: 100;
+}
+.nav ul li a {
+    padding: 7px 15px;
+    color: #fff;
+    /*font-size: 12px;
+    letter-spacing: 0.5px;*/
+}
+.nav li a i{
+	    font-size: 10px;
+    top: -2px;
+    position: relative;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+	    margin: 0;
+	    width: 160px;
+
+}
+.nav li  ul li{
+	border-bottom: 1px solid #77777742
+}
+.nav li  ul li:last-child{
+	border-bottom: 0
+}
+.nav > li.hover > ul {
+    left: -30px;
+	margin-top: 1px;
+	padding: 0;
+	
+    background: #383636;
+}
+/*320 - 767*/
+@media screen and (max-width: 767px) {
+.nav > li.hover{
+	height: 150px
+}
+	.nav li ul{
+		width: 182px;
+	}
+	}
+
+@media (min-width: 1440px) and (max-width: 5000px) {
+	.nav > li.hover{
+	line-height:12px
+}
+	.nav ul li a{
+	line-height:20px	
+	}
+	
+	}
