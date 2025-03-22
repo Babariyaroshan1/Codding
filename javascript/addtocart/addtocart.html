@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <!-- Product Section -->
+    <div class="product">
+        <h3>Product Name</h3>
+        <p>Price: $20</p>
+        <button class="add-to-cart" data-name="Product Name" data-price="20">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Another Product</h3>
+        <p>Price: $30</p>
+        <button class="add-to-cart" data-name="Another Product" data-price="30">Add to Cart</button>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <h3>Cart Summary</h3>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

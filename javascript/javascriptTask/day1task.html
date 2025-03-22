@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT TASK1</title>
+</head>
+<body>
+    <h1>JAVA SCRIPT</h1>
+    <script>
+        //practical task    
+        // 1. Declare a variable and assign a string value.
+        let myString = "Hello, JavaScript!";
+
+        // 2. Declare a variable and assign a number value.
+        let myNumber = 42;
+
+        // 3. Declare a variable and assign a boolean value.
+        let myBoolean = true;
+
+        // 4. Declare a variable without assigning a value and check its type.
+        let myUndefined;
+        console.log(typeof myUndefined); // "undefined"
+
+        // 5. Assign null to a variable and check its type.
+        let myNull = null;
+        console.log(typeof myNull); // "object" 
+
+        // 6. Create an object representing a person with properties like name, age, and city.
+        let person = {
+            name: "John Doe",
+            age: 30,
+            city: "New York"
+        };
+
+        // 7. Declare an array with at least five different fruit names.
+        let fruits = ["Apple", "Banana", "Cherry", "Mango", "Orange"];
+
+        // 8. Access and modify a value in an array.
+        fruits[2] = "Strawberry"; // Changing "Cherry" to "Strawberry"
+
+        // 9. Check if a variable is of type number using typeof.
+        console.log(typeof myNumber === "number"); // true
+
+        // 10. Convert a number to a string.
+        let numToStr = myNumber.toString();
+        console.log(numToStr, typeof numToStr); // "42" "string"
+
+        // 11. Convert a string to a number.
+        let strToNum = Number("123");
+        console.log(strToNum, typeof strToNum); // 123 "number"
+
+        // 12. Declare a constant variable and try reassigning a value sto see what happens.
+        const myConstant = 100;
+        // myConstant = 200; //error.
+
+        // 13. Check the difference between null and undefined.
+        console.log(null == undefined); // true 
+        console.log(null === undefined); // false 
+
+        // 14. Create a BigInt variable and log its value.
+        let bigNumber = 12345678901234567890n;
+        console.log(bigNumber, typeof bigNumber); // 12345678901234567890n "bigint"
+
+        // 15. Declare a symbol and use it as a property key in an object.
+        let uniqueKey = Symbol("id");
+        let user = {
+            [uniqueKey]: 101,
+            name: "Alice"
+        };
+        console.log(user[uniqueKey]); // 101
+
+        // 16. Write a JavaScript statement that outputs text in the console.
+        console.log("Hello, World!");
+
+        // 17. Create a template literal that includes a variable inside a string.
+        let greeting = Welcome, ${person.name}!;
+        console.log(greeting); // "Welcome, John Doe!"
+
+        // 18. Use typeof to check the type of different values.
+        console.log(typeof 123); // "number"
+        console.log(typeof "hello"); // "string"
+        console.log(typeof true); // "boolean"
+        console.log(typeof {}); // "object"
+        console.log(typeof []); // "object"
+        console.log(typeof function () { }); // "function"
+
+        // 19. Compare == and === when checking variable equality.
+        console.log(5 == "5"); // true 
+        console.log(5 === "5"); // false 
+    </script>
+
+</body>
+</html>
