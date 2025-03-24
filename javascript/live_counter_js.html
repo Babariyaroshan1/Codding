@@ -1,0 +1,61 @@
+<head>
+    <style>
+        #counter {
+            margin-top: 5px;
+            font-size: 14px;
+            color: green;
+        }
+
+        .exceeds {
+            color: red;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        </style>
+</head>
+
+    <!-- Character Counter
+
+    Description: Build a live character counter for a textarea that:
+    Displays the remaining characters (max: 200).
+    Changes the counter color to red if the limit exceeds.
+    Skills Tested: DOM manipulation, event handling, and conditionals.   -->
+
+<body>
+    <h1>Live Character Counter</h1>
+    <textarea id="textArea" maxlength="200" placeholder="Write here"></textarea>
+    <div id="counter">200 characters remaining</div>
+
+    <script>
+        let textArea = document.getElementById("textArea");
+        let counter = document.getElementById("counter");
+        let maxLength = 200;
+
+        // Add event listener to the textarea
+        textArea.addEventListener("input", function () {
+            let remaining = maxLength - this.value.length;
+
+            // Check if limit is exceeded
+            if (remaining < 0) {
+                counter.innerText = -remaining + " characters exceeded";
+                counter.classList.add("exceeds");
+            } else {
+                counter.innerText = remaining + " characters remaining";
+                counter.classList.remove("exceeds");
+
+                if (remaining <= 0) {
+                    counter.style.color = "red"; // Warning color
+                } else {
+                    counter.style.color = "green";
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>
