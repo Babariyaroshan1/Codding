@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.727);
+            color: aliceblue;
+        }
+
+       h1,h2{
+            color: aqua;
+        }
+        .task {
+            margin-bottom: 30px;
+        }
+
+        label,
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Switch Case Tasks</h1>
+
+    <!-- Task 1: Simple Calculator -->
+    <div class="task" id="calculator">
+        <h2>Simple Calculator</h2>
+        <p>Create a basic calculator that can perform addition, subtraction, multiplication, and division.</p>
+        <input type="number" id="calcNum1" placeholder="First Number">
+        <select id="calcOp">
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        <input type="number" id="calcNum2" placeholder="Second Number">
+        <button onclick="calculate()">Calculate</button>
+        <p>Result: <span id="calcResult">--</span></p>
+    </div>
+
+    <!-- Task 2: Day of the Week -->
+    <div class="task" id="dayOfWeek">
+        <h2>Day of the Week</h2>
+        <p>Ask the user to enter a number between 1 and 7. Display the corresponding day of the week (e.g., 1 for Sunday, 2
+            for Monday, etc.).</p>
+        <p>Enter a number (1-7) to get the day of the week.</p>
+        <input type="number" id="dayInput" placeholder="1-7">
+        <button onclick="getDay()">Get Day</button>
+        <p>Day:<span id="dayResult">-</span></p>
+    </div>
+    </div>
+
+    <!-- Task 3: Grade System -->
+    <div class="task" id="gradeSystem">
+        <h2>Grade System</h2>
+        <p>Based on a student's score (0-100), display their grade: 'A' for 90 and above, 'B' for 80-89, 'C' for 70-79,
+            'D' for 60-69, and 'F' for below 60.</p>
+    </div>
+
+    <!-- Task 4: Traffic Light Simulator -->
+    <div class="task" id="trafficLight">
+        <h2>Traffic Light Simulator</h2>
+        <p>Simulate a traffic light system where users input a color ('red', 'yellow', 'green') and display the
+            appropriate action ('STOP', 'READY', 'GO').</p>
+    </div>
+
+    <!-- Task 5: Currency Converter -->
+    <div class="task" id="currencyConverter">
+        <h2>Currency Converter</h2>
+        <p>Allow users to input an amount in USD and convert it to EUR, GBP, or INR based on the chosen currency.</p>
+    </div>
+
+
+
+    <!-- For Example  -->
+
+    <script>
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('calcNum1').value);
+            const num2 = parseFloat(document.getElementById('calcNum2').value);
+            const op = document.getElementById('calcOp').value;
+            let result;     
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Please enter valid numbers.";
+            } else {
+                switch (op) {
+                    case '+': result = num1 + num2; break;
+                    case '-': result = num1 - num2; break;
+                    case '*': result = num1 * num2; break;
+                    case '/': result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero"; break;
+                    default: result = "Invalid operation";
+                }
+            }
+            document.getElementById('calcResult').textContent = result;
+        }
+    </script>
+    <script>
+        // Task 2: Day of the Week
+        function getDay() {
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const input = parseInt(document.getElementById('dayInput').value);
+            const result = (input >= 1 && input <= 7) ? days[input - 1] : "Invalid input";
+            document.getElementById('dayResult').textContent = result;
+        }
+    </script>
+</body>
+
+</html>
